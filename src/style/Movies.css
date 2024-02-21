@@ -1,0 +1,58 @@
+.sort-buttons{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+    padding: 1em;
+    
+}
+.sort-buttons button{
+    font-size: .5em;
+    font-weight: 400;
+    width: 20%;
+    height: 3em;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.sort-buttons button:hover{
+    color: white;
+    background-color: rgb(85, 85, 164);
+    border: 2px solid white;
+    border-radius: 40px;
+}
+.sort-buttons button:focus{
+    background-color: brown;
+}
+.dark-movies-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2em;
+    text-align: center;
+    justify-content: center;
+    gap: 2em;
+    background-color: black;
+}
+.light-movies-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2em;
+    text-align: center;
+    justify-content: center;
+    gap: 2em;
+    background-color: white;
+}
+
+@media screen and (max-width:1090px){
+    .dark-movies-container,.light-movies-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:960px){
+    .dark-movies-container,.light-movies-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .sort-buttons button{
+        font-size: .4em;
+    }
+}

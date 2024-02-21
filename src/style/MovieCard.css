@@ -1,0 +1,64 @@
+
+.dark-main-card-container{
+    width: 25em;
+    height: 16em;
+    border: .01em solid white;
+    padding: .5em;
+    border-radius: 1.5em;
+    background-color: #232b2b;
+    color: white;
+    user-select: none;
+}
+.light-main-card-container{
+    width: 25em;
+    height: 16em;
+    border: .01em solid black;
+    padding: .5em;
+    border-radius: 1.5em;
+    background-color: #F9F6EE;
+    color: black;
+    user-select: none;
+}
+.image-container img{
+    width: 20em;
+    height: 10em;
+    border-radius: 1.5em;
+    
+}
+
+.description-container{
+    display: flex;
+    flex-direction: column;
+}
+.description-container h2{
+    font-size: 1.5em;
+}
+.description-container div h4{
+    font-size: 1em;
+}
+.description-container div{
+    display: flex;
+}
+@media screen and (max-width:500px){
+    .light-main-card-container,.dark-main-card-container{
+        width: 100%;
+        height: 40vh;
+        border-radius: 1em;
+    }
+    .image-container img{
+        width: 80%;
+       height: 20vh;
+        border-radius: 1.5em;
+    }
+}
+
+.like-btn{
+    position: absolute;
+    cursor: pointer;
+}
+.dark-like{
+    color: white;
+}
+.light-like{
+    color: black;
+}

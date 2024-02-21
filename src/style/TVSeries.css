@@ -1,0 +1,33 @@
+.dark-tv-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2em;
+    text-align: center;
+    justify-content: center;
+    gap: 2em;
+    background-color: black;
+}
+.light-tv-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2em;
+    text-align: center;
+    justify-content: center;
+    gap: 2em;
+    background-color: white;
+}
+@media screen and (max-width:1090px){
+    .dark-tv-container,.light-tv-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:960px){
+    .dark-tv-container,.light-tv-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .sort-buttons button{
+        font-size: .4em;
+    }
+}
