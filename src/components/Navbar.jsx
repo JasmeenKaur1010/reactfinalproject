@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom'
 import './../style/Navbar.css'
 import SearchIcon from '@mui/icons-material/Search';
 import LoginIcon from '@mui/icons-material/Login';
+import MovieFilterIcon from '@mui/icons-material/MovieFilter';
 import LightModeIcon from '@mui/icons-material/LightMode';
-import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
+
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import NightlightRoundIcon from '@mui/icons-material/NightlightRound';
@@ -17,7 +18,7 @@ export default function Navbar({mode,setMode,onSearch}) {
   return (
     <>
       <div className= {mode?'main-nav-container light-main':'main-nav-container dark-main'}>
-        <div className='logo-container'><TheaterComedyIcon/></div>
+        <div className='logo-container'><MovieFilterIcon/></div>
         <div className={mode?'dark-navigation-button':'light-navigation-button'}>
             <Link className='nav-button' to='/'>Home</Link>
             <Link className='nav-button' to='/Movies'>Movies</Link>
@@ -26,7 +27,7 @@ export default function Navbar({mode,setMode,onSearch}) {
             <Link className='nav-button' to='/TVLibrary'>TV Library</Link>
         </div>
         <div className={mode?'desk-search dark-search':'desk-search light-search'} style={searchToggle?{display:"block"}:{display:"none"}}>
-        <input className='input-box' type="text" placeholder='Enter your query...' onChange={(e)=>setQuery(e.target.value)}/>
+        <input className='input-box' type="text" placeholder='Search here' onChange={(e)=>setQuery(e.target.value)}/>
         
         </div>
         <input type="submit" className='submit-btn' onClick={()=>onSearch(query)} style={searchToggle?{display:"block"}:{display:"none"}}/>

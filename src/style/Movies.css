@@ -15,12 +15,13 @@
 }
 .sort-buttons button:hover{
     color: white;
-    background-color: rgb(85, 85, 164);
+    background-color: #005958;
     border: 2px solid white;
     border-radius: 40px;
 }
 .sort-buttons button:focus{
-    background-color: brown;
+    background-color: #0D3A32;
+    color: white;
 }
 .dark-movies-container{
     display: grid;
